@@ -1,17 +1,6 @@
 pipeline {
     agent any
-     
-    stages {
-      stage('checkout') {
-           steps {
-             
-                git branch: 'develop', url: 'yoururl'
-             
-          }
-        }
-        
-        
-        
+      
           stage('Ansible Init') {
             steps {
                 script {
